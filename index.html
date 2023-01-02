@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper flex">
+          <div class="flex" style="--gap: 3rem;">
+            <div>
+              <img src="./assets/logo.svg" alt="snap logo">
+            </div>
+
+            <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-menu-toggle"><span class="visually-hidden">Menu</span></button>
+      
+            <nav>
+              <ul data-visible="false" role="list" id="primary-navigation" class="primary-navigation flex">
+                <li class="dropdown" data-dropdown>
+                  <button data-dropdown-toggle class="dropdown-toggle | nav-link fs-sm text-gray flex">Features <img src="./assets/icon-arrow-down.svg" alt=""></button>
+                  <div class="dropdown-menu flex">
+                    <a class="fs-sm text-gray" href="#"><img src="./assets/icon-todo.svg" alt=""> Todo List</a>
+                    <a class="fs-sm text-gray" href="#"><img src="./assets/icon-calendar.svg" alt=""> Calendar</a>
+                    <a class="fs-sm text-gray" href="#"><img src="./assets/icon-reminders.svg" alt=""> Reminders</a>
+                    <a class="fs-sm text-gray" href="#"><img src="./assets/icon-planning.svg" alt=""> Planning</a>
+                  </div>
+                </li>
+      
+                <li class="dropdown" data-dropdown>
+                  <button data-dropdown-toggle class="dropdown-toggle | nav-link fs-sm text-gray flex">Company <img src="./assets/icon-arrow-down.svg" alt=""></button>
+                  <div class="dropdown-menu flex">
+                    <a class='fs-sm text-gray' href="#">History</a>
+                    <a class='fs-sm text-gray' href="#">Our Team</a>
+                    <a class='fs-sm text-gray' href="#">Blog</a>
+                  </div>
+                </li>
+      
+                <li><a class="nav-link fs-sm text-gray" href="#">Careers</a></li>
+      
+                <li><a class="nav-link fs-sm text-gray" href="#">About</a></li>
+              </ul>
+            </nav>
+          </div>
+  
+          <div data-visible="false" class="user-navigation flex">
+            <a class="btn | nav-link fs-sm text-gray" href="#">Login</a>
+            <button class="btn btn-user | nav-link fs-sm text-gray">Register</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container container--100">
+        <div class="even-columns flow">
+          <div class="main-text flow">
+            <h1 class="fs-lg fw-bold text-black">Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button class="btn btn-main | bg-black fw-bold text-white">Learn more</button>
+            
+            <div class="client">
+              <img src="./assets/client-databiz.svg" alt="">
+              <img src="./assets/client-audiophile.svg" alt="">
+              <img src="./assets/client-meet.svg" alt="">
+              <img src="./assets/client-maker.svg" alt="">
+            </div>
+          </div>
+
+          <div class="main-img">
+            <img src="./assets/image-hero-mobile.png" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
